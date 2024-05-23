@@ -1,0 +1,119 @@
+
+Bundler --> Webpack bundler and Parcel 
+
+does jsx understood by js --> no 
+
+jsx --> js  we need a compiler "BABEL"
+
+
+
+
+Functional component is a  normal javascript function which returns jsx 
+
+
+const App=()=>{
+
+return (
+    <div></div>
+)
+
+}
+
+
+<App/> 
+
+
+
+function App(){
+    return (
+        <div></div>
+    )
+}
+
+
+
+if we want to write a piece of js code inside jsx we need to wrap it up in a {}
+
+
+
+App -->
+          Header 
+                 Logo 
+                 Nav-items 
+                         Home 
+                         About 
+                         Contact 
+                         Cart 
+                         Login
+          Body 
+
+
+
+count--> normal javascript variable 
+
+// Class components are statefull component , we can manage state inside Class Component 
+
+//functional Component --< stateless component  
+
+
+2019 React 16.8 Hooks was introduced , with the help of hooks we can manage state inside functional component very easily 
+
+Functional component no more statlesss component 
+
+
+Hook  normal javascript utilty function 
+
+useState  , useEffect 
+
+
+const [count,] =useState(any data type )
+
+
+const [count, setCount]= useState(20)
+count=20
+setCount--> helper function used to update count
+
+setCount(count+1)
+
+when ever state value updates ,,,,, REACT WILL RE RENDERED 
+
+
+const [value,setValue]= useState("Omkar")
+
+value="Omkar" 
+setValue("Athma")
+value="Athma"
+
+
+
+useEffect-- used to handle side effects --> api calls, timers, outside the browser 
+
+useEffect --> after initial render , it gets called 
+
+
+
+useState -->
+1. Hook 
+2. used to manage state inside a component 
+3. when ever state variable updates react will re render
+4. const [color, setColor] = useState("red") 
+5. color-->"red" 
+6.setColor("blue")--> helper function 
+7. color ->"blue"
+8. 
+
+useEffect 
+
+1. used to handle side effects in react 
+2. what are side effects --> api calls, timers, dom operations 
+3. useEffect(callback function, dependency array)
+
+
+
+custom Hook --> javascript function 
+
+
+SRP --> SINGLE RESPONSIBILTY PRINCIPLE 
+
+
+contract finalize (input) and out put
